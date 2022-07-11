@@ -4,11 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Converter</title>
 </head>
 <body>
     
-
+    <div class="container">
+        
+        <div class="card">
+            
+            <div class="content">
+                
+                <h2>Currency converter</h2>
+                
+                <a href="Currency-Converter.html">Go to convert</a>
+                
+            </div>
+            
+        </div>
+        
+        <div class="card">
+            
+            <div class="content">
+                
+                <h2>Temperature converter</h2>
+                
+                <a href="Temperature-converter.html">Go to convert</a>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
     <script src="js/main.js"></script>
+    <script src="js/vanilla.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".card"), {
+            max: 25,
+            speed: 400
+        });
+        VanillaTilt.init(document.querySelectorAll(".card"));
+    </script>
 </body>
 </html>
